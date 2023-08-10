@@ -1,5 +1,6 @@
 const express = require('express')
 var cors = require('cors')
+const connectToMongo=require('./db')
 // const mongoose = require('mongoose')
 // require('dotenv').config();
 // const mongoURI = process.env.REACT_APP_DATABASE
@@ -13,7 +14,7 @@ var cors = require('cors')
 //     }
 // }
 
-// connectToMongo()
+connectToMongo()
 
 const app = express()
 const port = process.env.PORT || 5000
