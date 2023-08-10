@@ -1,19 +1,19 @@
 const express = require('express')
 var cors = require('cors')
-const mongoose = require('mongoose')
-require('dotenv').config();
-const mongoURI = process.env.REACT_APP_DATABASE
+// const mongoose = require('mongoose')
+// require('dotenv').config();
+// const mongoURI = process.env.REACT_APP_DATABASE
 
-const connectToMongo = async () => {
-    try {
-        await mongoose.connect(mongoURI);
-        console.log('Connected to Mongodb');
-    } catch (error) {
-        console.log('Not Connected to Mongodb')
-    }
-}
+// const connectToMongo = async () => {
+//     try {
+//         await mongoose.connect(mongoURI);
+//         console.log('Connected to Mongodb');
+//     } catch (error) {
+//         console.log('Not Connected to Mongodb')
+//     }
+// }
 
-connectToMongo()
+// connectToMongo()
 
 const app = express()
 const port = process.env.PORT || 5000
